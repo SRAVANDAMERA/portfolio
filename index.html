@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sravan Kumar Damera — Software Developer</title>
+<meta name="description" content="Portfolio of Sravan Kumar Damera, a Computer Science graduate specializing in Python, Django, PostgreSQL, and machine learning, open to software developer opportunities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1 !important; transform:none !important; transition:none !important;}</style></noscript>
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("sravan-portfolio-theme");
+      var theme = stored === "light" || stored === "dark"
+        ? stored
+        : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (theme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) { /* ignore */ }
+  })();
+</script>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark" aria-label="Sravan Kumar Damera, home">Sravan</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" data-section="about">About</a>
+      <a href="#stack" data-section="stack">Stack</a>
+      <a href="#work" data-section="work">Work</a>
+      <a href="#education" data-section="education">Education</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+
+    <div class="nav-status">
+      <span class="status-dot" aria-hidden="true"></span>
+      Available for opportunities
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="theme-icon theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M12 2.5V5M12 19V21.5M4.22 4.22L6 6M18 18L19.78 19.78M2.5 12H5M19 12H21.5M4.22 19.78L6 18M18 6L19.78 4.22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <svg class="theme-icon theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" data-section="about">About</a>
+    <a href="#stack" data-section="stack">Stack</a>
+    <a href="#work" data-section="work">Work</a>
+    <a href="#education" data-section="education">Education</a>
+    <a href="#contact" data-section="contact">Contact</a>
+    <div class="mobile-status"><span class="status-dot" aria-hidden="true"></span>Available for opportunities</div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-label">Computer Science Engineer · 2026</p>
+        <h1 class="hero-headline">
+          <span class="line accent-cobalt">SRAVAN</span>
+          <span class="line">KUMAR</span>
+          <span class="line">DAMERA</span>
+        </h1>
+        <p class="hero-role">Software Developer</p>
+        <p class="hero-summary">
+          Computer Science graduate (B.Tech, 2026) with a strong foundation in Python and
+          object-oriented design. Builds full-stack applications with Django and PostgreSQL,
+          with hands-on experience in Git/GitHub, debugging, and Agile workflows — seeking a
+          role as a software developer.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary magnetic">
+            <span>View Projects</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary magnetic">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 540" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <!-- grid lines -->
+          <line x1="0" y1="160" x2="480" y2="160" class="hv-grid"/>
+          <line x1="0" y1="430" x2="480" y2="430" class="hv-grid"/>
+          <line x1="100" y1="0" x2="100" y2="540" class="hv-grid"/>
+
+          <!-- terminal card -->
+          <rect x="60" y="24" width="360" height="150" rx="10" class="hv-panel"/>
+          <rect x="60" y="24" width="360" height="32" rx="10" class="hv-panel-bar"/>
+          <circle cx="82" cy="40" r="4" class="hv-dot-orange"/>
+          <circle cx="98" cy="40" r="4" class="hv-dot-lime"/>
+          <circle cx="114" cy="40" r="4" class="hv-dot-cobalt"/>
+          <text x="82" y="84" class="hv-code">class DeveloperProfile:</text>
+          <text x="98" y="106" class="hv-code hv-dim">stack = [Python, Django,</text>
+          <text x="114" y="124" class="hv-code hv-dim">PostgreSQL, ML]</text>
+          <text x="82" y="152" class="hv-code">status = "open_to_work"<tspan class="hv-cursor">_</tspan></text>
+
+          <!-- commit-graph style skill timeline -->
+          <line x1="100" y1="216" x2="100" y2="500" class="hv-spine"/>
+
+          <circle cx="100" cy="236" r="7" class="hv-node-cobalt"/>
+          <line x1="113" y1="236" x2="150" y2="236" class="hv-tick"/>
+          <text x="158" y="240" class="hv-tag">PYTHON</text>
+
+          <circle cx="100" cy="306" r="7" class="hv-node-cobalt"/>
+          <line x1="113" y1="306" x2="150" y2="306" class="hv-tick"/>
+          <text x="158" y="310" class="hv-tag">DJANGO</text>
+          <path d="M100 306 C 175 306, 175 352, 236 352" class="hv-branch"/>
+          <circle cx="236" cy="352" r="5" class="hv-node-lime"/>
+          <text x="248" y="356" class="hv-tag hv-tag-dim">GIT</text>
+          <path d="M236 352 C 175 352, 175 380, 100 380" class="hv-branch"/>
+
+          <circle cx="100" cy="400" r="8" class="hv-node-orange"/>
+          <line x1="114" y1="400" x2="150" y2="400" class="hv-tick"/>
+          <text x="158" y="404" class="hv-tag hv-tag-cobalt">POSTGRESQL</text>
+
+          <circle cx="100" cy="470" r="7" class="hv-node-cobalt pulse-node"/>
+          <line x1="113" y1="470" x2="150" y2="470" class="hv-tick"/>
+          <text x="158" y="474" class="hv-tag">MACHINE LEARNING</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">PYTHON</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">DJANGO</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">POSTGRESQL</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">MACHINE LEARNING</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">NLP</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">JAVASCRIPT</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">PYTHON</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">DJANGO</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">POSTGRESQL</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">MACHINE LEARNING</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">NLP</span><span class="marquee-sep">/</span>
+        <span class="marquee-item">JAVASCRIPT</span><span class="marquee-sep">/</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-index reveal">
+        <span class="index-num">01</span>
+        <span class="index-label">About</span>
+      </div>
+      <div class="about-body">
+        <p class="about-text reveal">
+          I'm Sravan Kumar Damera, a Computer Science graduate with a strong foundation in
+          <strong class="hl-cobalt">Python</strong>, object-oriented programming, and problem
+          solving. I have hands-on experience building full-stack applications using
+          <strong class="hl-cobalt">Django</strong> and <strong class="hl-orange">PostgreSQL</strong>,
+          along with practical knowledge of JavaScript, HTML, CSS, Git, and GitHub.
+        </p>
+        <p class="about-text about-text-secondary reveal">
+          My projects have given me experience in backend development, database management,
+          <strong class="hl-lime">machine learning</strong>, NLP, and responsive web development.
+          I enjoy turning ideas into practical solutions, debugging challenges, and continuously
+          learning new technologies to improve my development skills. I'm currently looking for
+          opportunities as a software developer, where I can contribute my technical
+          skills, solve real-world problems, and grow as a software developer.
+        </p>
+
+        <div class="about-facts">
+          <div class="fact reveal">
+            <span class="fact-num">2026</span>
+            <span class="fact-label">Graduation</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-num">7.53</span>
+            <span class="fact-label">CGPA</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-num">B.Tech</span>
+            <span class="fact-label">Computer Science</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-num">4</span>
+            <span class="fact-label">Featured Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack" id="stack">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker"><span class="kicker-num">02</span><span class="kicker-dot" aria-hidden="true"></span><span class="kicker-text">The Stack</span></span>
+        <h2>The Stack</h2>
+        <p>Tools he uses to turn ideas into working software.</p>
+      </div>
+
+      <div class="stack-wall" id="stackWall">
+        <!-- populated via categories below, kept in markup for accessibility -->
+
+        <div class="stack-group reveal" data-category="Languages">
+          <h3 class="stack-group-title">Languages</h3>
+          <ul class="stack-items">
+            <li class="stack-item" tabindex="0" data-desc="Primary language for backend logic and scripting.">Python</li>
+            <li class="stack-item" tabindex="0" data-desc="Object-oriented programming fundamentals.">Java</li>
+            <li class="stack-item" tabindex="0" data-desc="Systems-level programming and memory fundamentals.">C</li>
+            <li class="stack-item" tabindex="0" data-desc="Object-oriented extension of C used in coursework.">C++</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal" data-category="Web &amp; APIs">
+          <h3 class="stack-group-title">Web &amp; APIs</h3>
+          <ul class="stack-items">
+            <li class="stack-item" tabindex="0" data-desc="Backend framework used to build Smart Farm Care.">Django</li>
+            <li class="stack-item" tabindex="0" data-desc="Markup for structuring interfaces.">HTML5</li>
+            <li class="stack-item" tabindex="0" data-desc="Styling and responsive layout.">CSS3</li>
+            <li class="stack-item" tabindex="0" data-desc="Client-side interactivity and form validation.">JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal" data-category="ML &amp; Data">
+          <h3 class="stack-group-title">ML &amp; Data</h3>
+          <ul class="stack-items">
+            <li class="stack-item" tabindex="0" data-desc="Model building and evaluation for classification tasks.">Scikit-learn</li>
+            <li class="stack-item" tabindex="0" data-desc="Data loading and preprocessing.">Pandas</li>
+            <li class="stack-item" tabindex="0" data-desc="Numerical data manipulation.">NumPy</li>
+            <li class="stack-item" tabindex="0" data-desc="Text preprocessing for the SMS spam classifier.">NLP</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal" data-category="Databases">
+          <h3 class="stack-group-title">Databases</h3>
+          <ul class="stack-items">
+            <li class="stack-item" tabindex="0" data-desc="Relational database coursework.">Oracle</li>
+            <li class="stack-item" tabindex="0" data-desc="Primary database for full-stack projects.">PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal" data-category="Tools">
+          <h3 class="stack-group-title">Tools</h3>
+          <ul class="stack-items">
+            <li class="stack-item" tabindex="0" data-desc="Version control for every project.">Git</li>
+            <li class="stack-item" tabindex="0" data-desc="Hosting and collaboration.">GitHub</li>
+            <li class="stack-item" tabindex="0" data-desc="Primary code editor.">VS Code</li>
+            <li class="stack-item" tabindex="0" data-desc="Used for ML experimentation and visualization.">Jupyter Notebook</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal" data-category="Concepts">
+          <h3 class="stack-group-title">Concepts</h3>
+          <ul class="stack-items">
+            <li class="stack-item" tabindex="0" data-desc="Data structures and algorithms.">DSA</li>
+            <li class="stack-item" tabindex="0" data-desc="Object-oriented programming.">OOP</li>
+            <li class="stack-item" tabindex="0" data-desc="Database management systems.">DBMS</li>
+            <li class="stack-item" tabindex="0" data-desc="Software development lifecycle.">SDLC</li>
+            <li class="stack-item" tabindex="0" data-desc="Iterative, team-based delivery.">Agile</li>
+            <li class="stack-item" tabindex="0" data-desc="Breaking down and solving technical problems.">Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="stack-hint">Hover or focus a skill for detail</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker"><span class="kicker-num">03</span><span class="kicker-dot" aria-hidden="true"></span><span class="kicker-text">Selected Work</span></span>
+        <h2>Selected Work</h2>
+        <p>Four projects. Different problems. One engineering mindset.</p>
+      </div>
+    </div>
+
+    <nav class="project-nav" aria-label="Jump to project">
+      <a href="#project-01" data-project="01">01</a>
+      <a href="#project-02" data-project="02">02</a>
+      <a href="#project-03" data-project="03">03</a>
+      <a href="#project-04" data-project="04">04</a>
+    </nav>
+
+    <!-- PROJECT 01 -->
+    <article class="project" id="project-01">
+      <div class="section-inner project-grid">
+        <div class="project-copy reveal">
+          <span class="project-number">01</span>
+          <h3 class="project-title">Smart Farm Care</h3>
+          <p class="project-tech">Django · PostgreSQL · Python</p>
+          <ul class="project-points">
+            <li>Built a full-stack agricultural e-commerce platform using Django and PostgreSQL.</li>
+            <li>Designed role-based access control and normalized database schemas to improve performance.</li>
+            <li>Implemented cart and admin dashboard modules for the end-to-end purchasing workflow.</li>
+          </ul>
+        </div>
+        <div class="project-visual reveal">
+          <img src="images/smart-farm-care.jpg" alt="Smart Farm Care platform preview showing product catalog, cart, and admin dashboard" class="project-img" loading="lazy" width="1536" height="1024">
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 -->
+    <article class="project" id="project-02">
+      <div class="section-inner project-grid project-grid-rev">
+        <div class="project-visual reveal">
+          <img src="images/diabetes-prediction.jpg" alt="Diabetes risk prediction interface showing patient input data and model prediction result" class="project-img" loading="lazy" width="1536" height="1024">
+        </div>
+        <div class="project-copy reveal">
+          <span class="project-number">02</span>
+          <h3 class="project-title">Diabetes Risk Prediction System</h3>
+          <p class="project-tech">Python · Scikit-learn · Machine Learning</p>
+          <ul class="project-points">
+            <li>Built a machine learning web application for diabetes risk prediction using Scikit-learn.</li>
+            <li>Used Pandas and NumPy for dataset loading, preprocessing, and numerical data manipulation, with Scikit-learn for building and evaluating the classification model.</li>
+            <li>Used Jupyter Notebook for data analysis, model development, experimentation, and visualization of the diabetes dataset.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 -->
+    <article class="project" id="project-03">
+      <div class="section-inner project-grid">
+        <div class="project-copy reveal">
+          <span class="project-number">03</span>
+          <h3 class="project-title">SMS Spam Detection</h3>
+          <p class="project-tech">Python · NLP</p>
+          <p class="project-stat">5,500+ <span>messages classified</span></p>
+          <ul class="project-points">
+            <li>Developed an NLP-based SMS spam classifier trained on 5,500+ messages.</li>
+            <li>Benchmarked multiple ML algorithms and selected the best-performing classifier using precision-recall analysis.</li>
+            <li>Preprocessed text using tokenization and stop-word removal to improve classification accuracy.</li>
+          </ul>
+        </div>
+        <div class="project-visual reveal">
+          <img src="images/sms-spam-detection.jpg" alt="SMS spam detection terminal preview showing spam and ham classification with prediction probabilities" class="project-img" loading="lazy" width="1536" height="1024">
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 04 -->
+    <article class="project" id="project-04">
+      <div class="section-inner project-grid project-grid-rev">
+        <div class="project-visual reveal">
+          <img src="images/smart-parking.jpg" alt="Smart Parking System interface showing a live map, nearby parking spots, and booking flow" class="project-img" loading="lazy" width="1536" height="1024">
+        </div>
+        <div class="project-copy reveal">
+          <span class="project-number">04</span>
+          <h3 class="project-title">Smart Parking System</h3>
+          <p class="project-tech">HTML5 · CSS3 · JavaScript</p>
+          <ul class="project-points">
+            <li>Designed a responsive parking management interface with real-time slot availability.</li>
+            <li>Implemented slot booking, search, and filtering functionality to streamline the booking workflow.</li>
+            <li>Used JavaScript form validation and dynamic updates for a smooth booking experience.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker"><span class="kicker-num">04</span><span class="kicker-dot" aria-hidden="true"></span><span class="kicker-text">Education</span></span>
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"><span class="timeline-dot"></span></div>
+        <div class="timeline-item reveal">
+          <span class="timeline-year">2026</span>
+          <h3>B.Tech in Computer Science &amp; Engineering</h3>
+          <p>Bharat Institute of Engineering and Technology, Hyderabad</p>
+          <p class="timeline-meta">CGPA 7.53 / 10 · May 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="certs" id="certifications">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker"><span class="kicker-num">05</span><span class="kicker-dot" aria-hidden="true"></span><span class="kicker-text">Certifications</span></span>
+        <h2>Certifications</h2>
+      </div>
+      <ul class="cert-list">
+        <li class="cert-item reveal">
+          <span class="cert-index">01</span>
+          <span class="cert-name">Cybersecurity Fundamentals</span>
+          <span class="cert-org">Tech Mahindra Foundation</span>
+        </li>
+        <li class="cert-item reveal">
+          <span class="cert-index">02</span>
+          <span class="cert-name">Web Development</span>
+          <span class="cert-org">Pinnacle Labs</span>
+        </li>
+        <li class="cert-item reveal">
+          <span class="cert-index">03</span>
+          <span class="cert-name">Python Programming</span>
+          <span class="cert-org">CodSoft</span>
+        </li>
+        <li class="cert-item reveal">
+          <span class="cert-index">04</span>
+          <span class="cert-name">Java Programming</span>
+          <span class="cert-org">Let's Upgrade</span>
+        </li>
+        <li class="cert-item reveal">
+          <span class="cert-index">05</span>
+          <span class="cert-name">Smart India Hackathon — Participation Certificate</span>
+          <span class="cert-org">Ministry of Education, India</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <span class="section-kicker section-kicker-dark"><span class="kicker-num">06</span><span class="kicker-dot" aria-hidden="true"></span><span class="kicker-text">Contact</span></span>
+      <h2 class="contact-headline">
+        <span class="line">LET'S</span>
+        <span class="line">BUILD</span>
+        <span class="line">SOMETHING<span class="contact-period">.</span></span>
+      </h2>
+      <p class="contact-sub">Open to software developer opportunities.</p>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <div class="contact-row">
+            <a href="mailto:sravankumardamera611@gmail.com" class="contact-value">sravankumardamera611@gmail.com</a>
+            <button class="copy-btn" data-copy="sravankumardamera611@gmail.com" aria-label="Copy email address">Copy</button>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <div class="contact-row">
+            <a href="tel:+919959674574" class="contact-value">+91-9959674574</a>
+            <button class="copy-btn" data-copy="+91-9959674574" aria-label="Copy phone number">Copy</button>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <div class="contact-row">
+            <a href="https://github.com/SRAVANDAMERA" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/SRAVANDAMERA</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <div class="contact-row">
+            <span class="contact-value contact-value-muted">Sravan Kumar Damera</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span>SRAVAN.DEV</span>
+    <span class="footer-tech">PYTHON · DJANGO · POSTGRESQL · ML</span>
+    <span>© 2026 Sravan Kumar Damera</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+<script src="script.js"></script>
+</body>
+</html>
